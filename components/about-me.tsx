@@ -28,18 +28,13 @@ export default function AboutMe() {
               Luis Angel Gutierrez Cantuta
             </h1>
             <p className="text-gray-300 leading-relaxed">
-              Estoy en el último año de la carrera de Ingenieria de Sistemas de
-              Universidad Pública de El Alto. Aunque mi experiencia puede ser
-              limitada, lo compensaré con mi actitud proactiva y mi
-              determinación para aprender y crecer profesionalmente. Estoy muy
-              abierto a nuevas oportunidades y desafios que me permitan
-              desarrollar mis habilidades.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Estoy emocionado por empezar a construir mi trayectoria
-              profesional y aplicar mis conocimientos. Si buscas a alguien con
-              determinación y ganas de aprender, me encantaria ser considerado
-              para cualquier oportunidad que se presente.
+              Egresado de la carrera de Ingeniería de Sistemas de la Universidad
+              Pública de El Alto. He participado en actividades académicas y
+              prácticas profesionales durante los últimos meses, fortaleciendo
+              mis conocimientos técnicos y habilidades prácticas. Me encuentro
+              abierto a nuevos desafíos que me permitan continuar desarrollando
+              mis habilidades y aplicar mis conocimientos en entornos
+              profesionales.
             </p>
             <p className="text-gray-300 leading-relaxed">
               ¡Gracias por su tiempo y consideración!
