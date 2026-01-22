@@ -37,9 +37,9 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="py-20 px-4 bg-gradient-to-b from-[#0a0a0f] to-[#0f0a1f]"
+      className="bg-gradient-to-b from-[#0a0a0f] to-[#0f0a1f] min-h-screen scroll-mt-[10vh]"
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto px-4 py-16">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
           Portafolio
         </h2>
@@ -95,7 +95,7 @@ export default function Portfolio() {
                   index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""
                 }`}
               >
-                <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-purple-500/50 shadow-xl shadow-purple-500/30 hover:scale-105 transition-transform">
+                <div className="relative aspect-video rounded-2xl overflow-hidden  shadow-xl shadow-purple-500/30 hover:scale-105 transition-transform">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={`Proyecto ${project.number}`}
