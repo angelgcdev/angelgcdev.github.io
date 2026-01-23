@@ -22,17 +22,15 @@ export default function Contact() {
             rel="noopener noreferrer" //para prevenir ataques de reverse tabnabbing y proteger la privacidad del usuario.
             className="flex items-center gap-4 p-6 bg-white/5 rounded-xl hover:scale-105 transition-transform"
           >
-            <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg">
+            <div className="w-12 h-12 flex items-center justify-center">
               <Image
-                src="/images/whatsapp.png"
+                src="/images/whatsapp.svg"
                 width={50}
                 height={50}
                 alt="WhatsApp logo"
               />
             </div>
-            <p className="group-hover:text-purple-400 text-white font-semibold">
-              🇧🇴 +591 74903382
-            </p>
+            <p className="text-white font-semibold">🇧🇴 +591 74903382</p>
           </a>
 
           <a
