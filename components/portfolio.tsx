@@ -9,12 +9,22 @@ const projects = [
     description:
       'Sistema desarrollado para automatizar interacciones en redes sociales y potenciar la visibilidad de publicaciones. Permite ejecutar acciones como comentar, dar "me gusta" o seguir usuarios de forma automática en TikTok y Facebook.',
     tech: "Backend: NestJS, Socket.IO, PostgreSQL\n\nFrontend: Next.js\n\nAplicación móvil: Kotlin (Android) con Accessibility Service",
-    // link: "https://github.com/angelgcdev/Automatizacion_posts_facebook_V2",
+    link: "https://bot-farm-frontend-deploy-render.vercel.app/login",
     image: "/proyects-images/proyecto1.png",
     empresa: "Importadora Miranda",
   },
   {
     number: 2,
+    title: "Francia Crochet",
+    description:
+      "Aplicación web fullstack desarrollada con Next.js para la exhibición y gestión de productos tejidos a mano (ropa para bebés y amigurumis). Incluye una landing page pública para clientes y un panel privado con autenticación que permite al administrador gestionar productos, los cuales se reflejan en tiempo real en el sitio público.",
+    tech: "Next.js, React, Tailwind CSS, Auth, Fullstack",
+    link: "https://francia-crochet.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dngkwtctt/image/upload/v1769115924/francia-crocket-web_1_oscgdi.png",
+  },
+  {
+    number: 3,
     title: "Automatización de publicaciones en Facebook",
     description:
       "Este proyecto es un prototipo de automatización de publicaciones en grupos de facebook, es un prototipo realizado con:",
@@ -23,11 +33,11 @@ const projects = [
     image: "/proyects-images/proyect-fac.png",
   },
   {
-    number: 3,
-    title: "TODOS (Lista de tareas)",
+    number: 4,
+    title: "TO DO (Lista de tareas)",
     description:
       "Este proyecto esta realizado con React JS como parte de un curso de introducción a esta libreria. Se trata de una lista de tareas que permite añadir nuevas tareas, marcarlas como completadas, eliminarlas y buscarlas de manera sencilla.",
-    tech: "",
+    tech: "HTML, CSS, JavaScript, React JS",
     link: "https://angelgcdev.github.io/curso-react-intro-platzi/",
     image: "/proyects-images/TODO-reactjs.png",
   },
@@ -98,9 +108,9 @@ export default function Portfolio() {
                 <div className="relative aspect-video rounded-2xl overflow-hidden  shadow-xl shadow-purple-500/30 hover:scale-105 transition-transform">
                   <Image
                     src={project.image || "/placeholder.svg"}
-                    alt={`Proyecto ${project.number}`}
+                    alt={`Vista previa del proyecto ${project.title}`}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>

@@ -10,48 +10,46 @@ export default function Footer() {
             Desarrollado por Luis Angel Gutierrez Cantuta - 2026
           </p>
 
-          <div className="flex items-center gap-4">
-            <Link
-              href="https://wa.me/74903382"
-              target="_blank"
-              rel="noopener noreferrer" //para prevenir ataques de reverse tabnabbing y proteger la privacidad del usuario.
-              className="w-[50px] h-[50px] flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-            >
-              <Image
-                src="/images/whatsapp.png"
-                alt="WhatsApp"
-                width={40}
-                height={40}
-              />
-            </Link>
-
-            <Link
-              href="https://www.facebook.com/profile.php?id=100093205989441"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-[50px] h-[50px] flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-            >
-              <Image
-                src="/images/facebook.png"
-                alt="Facebook"
-                width={40}
-                height={40}
-              />
-            </Link>
-
-            <Link
-              href="https://github.com/angelgcdev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-[50px] h-[50px] flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-            >
-              <Image
-                src="/images/github.png"
-                alt="GitHub"
-                width={60}
-                height={60}
-              />
-            </Link>
+          <div className="flex items-center justify-evenly gap-4">
+            {[
+              {
+                href: "https://wa.me/74903382",
+                alt: "WhatsApp",
+                src: "/images/whatsapp.svg",
+              },
+              {
+                href: "https://github.com/angelgcdev",
+                alt: "GitHub",
+                src: "/images/github.svg",
+              },
+              {
+                href: "https://www.linkedin.com/in/angel-guti%C3%A9rrez-a064b52b4/",
+                alt: "Linkedin",
+                src: "/images/linkedin.svg",
+              },
+              {
+                href: "https://www.facebook.com/profile.php?id=100093205989441",
+                alt: "Facebook",
+                src: "/images/facebook.svg",
+              },
+            ].map(({ href, alt, src }) => (
+              <Link
+                key={alt}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="relative w-10 h-10">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    fill
+                    style={{ objectFit: "contain" }}
+                    className="hover:scale-105 transition-transform"
+                  />
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

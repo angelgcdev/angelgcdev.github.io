@@ -20,7 +20,7 @@ export default function Contact() {
             href="https://wa.me/74903382"
             target="_blank"
             rel="noopener noreferrer" //para prevenir ataques de reverse tabnabbing y proteger la privacidad del usuario.
-            className="flex items-center gap-4 p-6 bg-white/5 rounded-xl hover:border border-white/10 hover:border-purple-500/50 transition-colors group"
+            className="flex items-center gap-4 p-6 bg-white/5 rounded-xl hover:scale-105 transition-transform"
           >
             <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg">
               <Image
@@ -37,7 +37,7 @@ export default function Contact() {
 
           <a
             href="mailto:angelgcdev@gmail.com"
-            className="flex items-center gap-4 p-6 bg-white/5 rounded-xl hover:border border-white/10 hover:border-purple-500/50 transition-colors group"
+            className="flex items-center gap-4 p-6 bg-white/5 rounded-xl hover:scale-105 transition-transform"
           >
             <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg">
               <Mail className="text-white" size={24} />

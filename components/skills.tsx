@@ -13,8 +13,11 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-[#0a0a0f] min-h-screen scroll-mt-[10vh]">
-      <div className="container mx-auto px-4 py-16">
+    <section
+      id="skills"
+      className="bg-[#0a0a0f] min-h-screen scroll-mt-[10vh] flex items-center"
+    >
+      <div className="container mx-auto px-4 py-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
           Mis Habilidades
         </h2>
