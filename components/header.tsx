@@ -48,7 +48,7 @@ export default function Header() {
         <nav
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } md:flex absolute md:relative top-full left-0 right-0 md:top-auto bg-[#0a0a0f] md:bg-transparent flex-col md:flex-row gap-6 p-6 md:p-0 border-b md:border-b-0 border-white/10`}
+          } absolute top-full left-0 right-0 bg-[#0a0a0f]/95 backdrop-blur-sm flex-col gap-6 p-6 border-b border-white/10`}
         >
           {/* <Link
             href="#home"
@@ -97,10 +97,14 @@ export default function Header() {
 
         <button
           onClick={toggleMenu}
-          className="md:hidden text-white hover:text-purple-400 transition-colors"
+          className="text-white hover:text-purple-400 transition-colors"
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? (
+            <X className="w-7 h-7 md:w-9 md:h-9" />
+          ) : (
+            <Menu className="w-7 h-7 md:w-12 md:h-12" />
+          )}
         </button>
       </div>
     </header>
